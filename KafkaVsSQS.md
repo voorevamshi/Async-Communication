@@ -46,6 +46,9 @@ This document outlines the key differences, advantages, and trade-offs between *
 * **Immutability & Replay:** Events stay in the log. You can add a new microservice today and have it "replay" the last 3 years of data.
 * **Kafka Share Groups (v4.2):** Now provides SQS-like "competing consumer" logic natively, allowing easier task distribution without complex partition management.
 * **Rich Ecosystem:** Kafka Connect and Kafka Streams allow for powerful real-time data transformations without external tools.
+* **High Throughput and Low Latency:** Kafka is built for speed and can handle millions of events per second with very low latency.Kafka is the most trusted tool for grabbing massive amounts of information and handling it the exact second it arrives.
+  **Ex: Low Latency:** You ask a question, and the other person responds almost instantly. The conversation flows naturally.
+  **Ex: High Throughput (Volume):** You are a celebrity who sends one post, and 1 million followers receive it at the same time.
 
 ### ❌ Disadvantages (Cons)
 * **Management Complexity:** Even with **KRaft** removing ZooKeeper, you still need to manage partition counts, replication factors, and broker health.
